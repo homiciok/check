@@ -9,7 +9,7 @@
 			},
 			controller: 'theMenuController',
 			templateUrl: 'theMenu/theMenuTemplate.html',
-			link: function (scope, iElement, iAttrs) {
+			link: function (scope, el, attrs) {
 				
 			}
 		};

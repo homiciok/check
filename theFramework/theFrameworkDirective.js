@@ -3,7 +3,7 @@
 
 	angular.module('theFramework').directive('oneFramework', function () {
 		return {
-			transclude: false,
+			transclude: true,
 			scope: {
 				title: '@',
 				subtitle: '@',

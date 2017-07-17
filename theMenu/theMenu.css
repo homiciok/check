@@ -1,0 +1,63 @@
+.the-menu-area {
+	position: relative;
+	background-color: #333;
+	color: #ccc;
+	padding-left: 0;
+	width: 200px;
+	min-height: 100vh;
+	padding-top: 30 px;
+
+}
+
+.the-menu-area .btn:hover {
+	color: #ccc;
+}
+
+.the-menu-area ul {
+	padding-left: 0;
+}
+
+.the-menu {
+	list-style-type: none;
+	vertical-align: top;
+}
+
+.the-menu ul {
+	display: inline;
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.the-menu li {
+	line-height: 3em;
+	cursor: pointer;
+}
+
+.the-menu li div {
+	display: inline-block;
+	width: 90%;
+	padding-left: 16px;
+}
+
+.the-select-item:hover {
+	background-color: #555;
+}
+
+.the-menu-icon {
+	margin-right: 10px;
+}
+
+.the-menu-active-indicator {
+	float: right;
+	color: #ddd;
+	margin-right: 0;
+	margin-top: 8px;
+}
+
+.the-noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-user-select: none;
+}
