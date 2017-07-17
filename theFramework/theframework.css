@@ -1,0 +1,55 @@
+.the-title-bar {
+	background-color: white;
+	padding: 0 20px;
+	border-bottom: 2px solid black;
+}
+
+.the-logo-area {
+	text-align: center;
+}
+
+.the-title-area {
+	display: inline-block;
+	text-align: center;
+}
+
+.the-icon {
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	margin: 8px;
+	vertical-align: top;
+	border: 1px solid #999;
+}
+
+.the-logo-title{
+	color: #111;
+	margin-top: 6px;
+	font-size: 22px;
+}
+
+.the-logo-subtitle{
+	margin-top: -13px;
+	font-size: 13px;
+}
+
+.the-right-side-controls {
+	line-height: 60px;
+}
+
+.the-right-side-controls > div {
+	text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+	.the-right-side-controls > div {
+		text-align: right;
+	}
+	.the-title-area {
+		text-align: left;
+	}
+
+	.the-logo-area {
+	text-align: left;
+}
+}

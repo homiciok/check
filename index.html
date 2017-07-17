@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+ <meta charset="UTF-8">
+	<title></title>
+	
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
+	<script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
+
+	<link href="app/app.css" rel="stylesheet">
+	<link href="theFramework/theframework.css" rel="stylesheet">
+
+
+	<script src="theFramework/theFrameworkModule.js"></script>
+	<script src="theFramework/theFrameworkDirective.js"></script>
+	<script src="theFramework/theFrameworkController.js"></script>
+
+	<script src="theMenu/theMenuModule.js"></script>
+	<script src="theMenu/theMenuController.js"></script>
+	<script src="theMenu/theMenuDirective.js"></script>
+	<script src="theMenu/theMenuItemDirective.js"></script>
+
+	<script src="theDashboard/theDashboardModule.js"></script>
+
+	<script src="app/appModule.js"></script>
+
+</head>
+<body class="container-fluid">
+	<one-framework title="Awesome"
+				subtitle="Most Awesome"
+				icon-file="">
+
+		<one-menu>
+			<one-menu-item label="Dashboard"></one-menu-item>
+			<one-menu-item label="Profile"></one-menu-item>
+			<one-menu-item label="Favorite"></one-menu-item>
+		</one-menu>
+
+	</one-framework>
+</body>
+</html>
