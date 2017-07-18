@@ -4,7 +4,10 @@
 	angular.module('theMenu').controller('theMenuController',
 		['$scope', '$rootScope',
 			 function ($scope, $rootScope) {
-				this.setActiveElement = function () {
+
+			 	$scope.showMenu = true;
+
+				this.getActiveElement = function () {
 					return $scope.activeElement;
 				};
 
@@ -17,6 +20,10 @@
 					$rootScope.$broadcast('the-menu-item-selected-event', 
 						{ route: route });
 				};
+
+				$scope.$on('the-menu-show', function (evt, data) {
+					$scope.showMenu = data.show;
+				});
 	}]);
 
 })();

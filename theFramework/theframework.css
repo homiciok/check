@@ -5,7 +5,7 @@
 }
 
 .the-logo-area {
-	text-align: center;
+	/*text-align: center;*/
 }
 
 .the-title-area {
@@ -31,6 +31,17 @@
 .the-logo-subtitle{
 	margin-top: -13px;
 	font-size: 13px;
+}
+
+
+@media screen and (max-width: 430px) {
+	.the-icon {
+		display: none;
+	}
+
+	.the-logo-title {
+		font-size: 18px;
+	}
 }
 
 .the-right-side-controls {

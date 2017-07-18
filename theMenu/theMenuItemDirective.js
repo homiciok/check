@@ -11,7 +11,8 @@
 			},
 			templateUrl: 'theMenu/theMenuItemTemplate.html',
 			link: function (scope, iElement, iAttrs, controller) {
-				scope.isActiveElement = function () {
+				
+				scope.isActive = function () {
 					return iElement === controller.getActiveElement();
 				};
 
@@ -23,7 +24,7 @@
 						controller.setRoute(scope.route);
 					});
 				});
-			},
+			}
 		};
 	}]);
 
