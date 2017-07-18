@@ -7,24 +7,24 @@
 			scope: {
 				label: '@',
 				icon: '@',
-				route: '@'	
+				route: '@',	
 			},
 			templateUrl: 'theMenu/theMenuItemTemplate.html',
-			link: function (scope, el, attrs, ctrl) {
-				scope.isActive = function () {
-					return el === ctrl.getActive();
-				}
+			link: function (scope, iElement, iAttrs, controller) {
+				scope.isActiveElement = function () {
+					return iElement === controller.getActiveElement();
+				};
 
-				el.on('click', function (evt) {
+				iElement.on('click', function (evt) {
 					evt.stopPropagation();
 					evt.preventDefault();
 					scope.$apply(function () {
-						ctrl.setActive(el);
-						ctrl.setRoute(scope.route);
+						controller.setActiveElement(iElement);
+						controller.setRoute(scope.route);
 					});
 				});
-			}
+			},
 		};
-	}])
+	}]);
 
 })();

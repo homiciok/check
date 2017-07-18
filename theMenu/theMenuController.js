@@ -2,20 +2,21 @@
 	'use strict';
 
 	angular.module('theMenu').controller('theMenuController',
-		['$scope',
-			 function ($scope) {
-				this.setActive = function () {
-					return $scope.active;
+		['$scope', '$rootScope',
+			 function ($scope, $rootScope) {
+				this.setActiveElement = function () {
+					return $scope.activeElement;
 				};
 
 
-				this.setActive = function (el) {
-					$scope.active = el;
+				this.setActiveElement = function (iElement) {
+					$scope.activeElement = iElement;
 				};
 
 				this.setRoute = function (route) {
-					$routeScope.$broadcast('the-menu-item-selected-event', { route: route});
+					$rootScope.$broadcast('the-menu-item-selected-event', 
+						{ route: route });
 				};
-	}])
+	}]);
 
 })();

@@ -9,10 +9,10 @@
 			},
 			controller: 'theMenuController',
 			templateUrl: 'theMenu/theMenuTemplate.html',
-			link: function (scope, el, attrs) {
+			link: function (scope, iElement, iAttrs) {
 				
 			}
 		};
-	}])
+	}]);
 
 })();
